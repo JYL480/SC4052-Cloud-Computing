@@ -1,56 +1,155 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,300,400);
 
-body, form input[type="text"] {
-    font-family: "Open Sans", sans-serif;
+body,
+form input[type="text"] {
+  font-family: "Open Sans", sans-serif;
 }
 
-.pod { fill: #005; }
-.cable { stroke: #999; stroke-width: 1px; }
-.host { fill: #500; }
+/* Classic Fat Tree Styles */
+.pod {
+  fill: #005;
+}
+.cable {
+  stroke: #999;
+  stroke-width: 1px;
+}
+.host {
+  fill: #500;
+}
 
-svg.main { display: block; margin: auto; z-index: -1; }
+/* Google Jupiter Styles */
+.jupiter-spine {
+  fill: #1976d2;
+}
+.jupiter-leaf {
+  fill: #42a5f5;
+}
+.jupiter-cable {
+  stroke: #64b5f6;
+  stroke-width: 1.2px;
+}
+.jupiter-host {
+  fill: #0d47a1;
+}
+
+/* Dragonfly Styles */
+.dragonfly-router {
+  fill: #388e3c;
+}
+.dragonfly-group {
+  fill: none;
+  stroke: #4caf50;
+}
+.dragonfly-global {
+  stroke: #ff5722;
+  stroke-width: 3px;
+}
+
+/* Leaf-Spine Styles */
+.leafspine-spine {
+  fill: #7b1fa2;
+}
+.leafspine-leaf {
+  fill: #9c27b0;
+}
+.leafspine-cable {
+  stroke: #ba68c8;
+  stroke-width: 1px;
+}
+
+/* AI-Optimized Fabric Styles */
+.ai-spine {
+  fill: #00796b;
+}
+.ai-leaf {
+  fill: #00897b;
+}
+.ai-cable {
+  stroke: #00bcd4;
+  stroke-width: 1.5px;
+}
+.ai-server {
+  fill: #37474f;
+  stroke: #00bcd4;
+  stroke-width: 2px;
+}
+.gpu {
+  fill: #4caf50;
+  stroke: #2e7d32;
+  stroke-width: 0.5px;
+}
+
+/* Topology Labels */
+.topology-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: #333;
+}
+
+svg.main {
+  display: block;
+  margin: auto;
+  z-index: -1;
+}
 
 div.control {
-    position: absolute;
-    right: .1in;
-    left: .1in;
-    width: 2in;
-    padding-top: .1in;
-    padding-bottom: .1in;
-    padding-left: .15in;
-    margin-right: .1in;
-    background: #eee;
-    font-size: .13in;
+  position: absolute;
+  right: 0.1in;
+  left: 0.1in;
+  width: 2.5in;
+  padding-top: 0.1in;
+  padding-bottom: 0.1in;
+  padding-left: 0.15in;
+  margin-right: 0.1in;
+  background: #eee;
+  font-size: 0.13in;
 }
 
 form ul {
-    list-style-type:none;
-    margin: .1in;
-    padding: 0;
+  list-style-type: none;
+  margin: 0.1in;
+  padding: 0;
 }
 
 form ul li {
-    margin-left: 1in;
-    padding-bottom: .01in;
-    line-height: .23in;
+  margin-left: 1in;
+  padding-bottom: 0.01in;
+  line-height: 0.23in;
 }
 
-form input[type="text"] {
-    width: .3in;
-    border: 1px solid #ccc;
-    font-size: .13in;
+form input[type="text"],
+form select {
+  width: 0.6in;
+  border: 1px solid #ccc;
+  font-size: 0.12in;
+  padding: 2px;
+}
+
+form select {
+  width: 1.2in;
 }
 
 form span.f {
-    margin-left: -1.1in;
-    width: 1in;
-    text-align: right;
-    padding-right: .05in;
-    float: left;
+  margin-left: -1.1in;
+  width: 1in;
+  text-align: right;
+  padding-right: 0.05in;
+  float: left;
 }
 
-a { text-decoration: none; }
-a:hover { text-decoration: underline; }
-div.comment { color: #666; text-align: center; margin-right: .1in; }
-div.comment a { color: #66c; }
-
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+div.comment {
+  color: #666;
+  text-align: center;
+  margin-right: 0.1in;
+  font-size: 0.11in;
+  margin-top: 0.1in;
+}
+div.comment a {
+  color: #66c;
+}
